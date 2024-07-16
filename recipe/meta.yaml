@@ -1,4 +1,4 @@
-{% set version = "1.0.7" %}
+{% set version = "1.1.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/comorbidity_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/comorbidity/comorbidity_{{ version }}.tar.gz
-  sha256: 6dd4bf7f2b63a815348638ff5f49853abeec9f9f92be8f7f06e15763d4103fa1
+  sha256: abd585a3d1007a83940ef602bfc7386c1ab926ac3b12653424e7403fc33006c9
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
